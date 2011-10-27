@@ -1,0 +1,33 @@
+Author: Corey Osman
+Date: 7-21-2009
+email: corey@logicminds.biz
+
+
+
+Powerdown Application
+
+Purpose: The purpose of this app is to power down all your virtual equipment from one simple app.  The app uses the vmware sdk to connect to your virtual infrastructure and turns off all the associated virtual machines and host systems.
+
+Note: This program will shutdown all the VMs and hosts under the VI host's control
+If the VI host is a virtual center server than all the ESX hosts will be shutdown
+
+VMware Server: in order to use with vmware server you must add the port number associated with the host: https://hostname:8333/sdk
+
+
+usage: java -jar powerdown.jar powerdownconfig.txt
+or 
+powerdown.jar powerdownconfig.txt
+
+Configuration file options:
+--url=https://vihost/sdk (Required)
+--username=vi_username (Required, user must have shutdown permissions)
+--password=vi_userpass (Required)
+--smtpserver=smtpserver (Required
+--msgsubject=subject header of email (optional)
+--msgbody=This is a test (optional) Message that explains what is going on
+--hostwaitperiod=300 (optional)
+--dryrun=true (Required)
+--email=me@me.com (Required)
+--from=powerdown@me.com (Required)
+--hoststandby=false (optional) Puts the host into standby mode instead of shutting down
+

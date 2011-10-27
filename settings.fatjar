@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Mon Jun 29 23:52:45 EDT 2009
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=true
+jarname=powerdown.jar
+manifest.mergeall=true
+manifest.mainclass=com.logicminds.vmware.utilities.powerdown
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

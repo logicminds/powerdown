@@ -1,0 +1,14 @@
+# Use the ESX(i) or vcenter 
+--url=https://vmwareip/sdk 
+--username=vmwareuser
+--password=vmwarepass
+--smtpserver= 
+--msgsubject=Automated Powerdown alert for testlab virtual infrastructure (testing, please ignore)
+--msgbody=""
+# wait time in seconds for all the vms to shutdown  before shutting down the host
+--hostwaitperiod=300
+--dryrun=false
+--email=
+--from=powerdownscript@automated.com
+# Put host into standby mode instead of powering off
+--hoststandby=false
